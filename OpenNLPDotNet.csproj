@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IronPython" Version="2.7.11" />
+  </ItemGroup>
+	<ItemGroup>
+		<Reference Include="IKVM.OpenJDK.Core">
+			<HintPath>OpenNLPDLL\IKVM.OpenJDK.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="IKVM.OpenJDK.Jdbc">
+			<HintPath>OpenNLPDLL\IKVM.OpenJDK.Jdbc.dll</HintPath>
+		</Reference>
+		<Reference Include="IKVM.OpenJDK.Text">
+			<HintPath>OpenNLPDLL\IKVM.OpenJDK.Text.dll</HintPath>
+		</Reference>
+		<Reference Include="IKVM.OpenJDK.Util">
+			<HintPath>OpenNLPDLL\IKVM.OpenJDK.Util.dll</HintPath>
+		</Reference>
+		<Reference Include="IKVM.OpenJDK.XML.API">
+			<HintPath>OpenNLPDLL\IKVM.OpenJDK.XML.API.dll</HintPath>
+		</Reference>
+		<Reference Include="IKVM.Runtime">
+			<HintPath>OpenNLPDLL\IKVM.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="opennlp">
+			<HintPath>OpenNLPDLL\opennlp.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+    <None Update="en-ner-person.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="en-sent.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="en-token.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="OpenNLPDLL\IKVM.OpenJDK.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="OpenNLPDLL\IKVM.OpenJDK.Jdbc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="OpenNLPDLL\IKVM.OpenJDK.Text.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="OpenNLPDLL\IKVM.OpenJDK.Util.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="OpenNLPDLL\IKVM.OpenJDK.XML.API.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="OpenNLPDLL\IKVM.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="OpenNLPDLL\opennlp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="speechText.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
